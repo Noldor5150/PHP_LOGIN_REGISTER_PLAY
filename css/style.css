@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    text-align: center;
+}
+
+.navigation {
+    background: #985f00;
+}
+
+.navigation ul {
+    padding: 5px;
+    text-align: center;
+}
+
+.navigation ul li {
+    display: inline-block;
+    background: #ff9f00;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navigation ul li a {
+    color: black;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Verdana';
+}
+
+form {
+    display: inline-block;
+    font-family: 'Verdana';
+    font-size: 16px;
+    background: #eeeeee;
+    padding: 20px;
+}
+
+form .error {
+    color: red;
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.insider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.insider p {
+    font-size: 20px;
+    margin: 0 5px 5px 0;
+}
