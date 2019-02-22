@@ -1,0 +1,85 @@
+body {
+  background: #333;
+  max-width: 1200px;
+}
+.header{
+  text-align: center;
+  color: gold;
+  font-family: Arial, Helvetica, sans-serif;
+  animation-name: header;
+  animation-duration: 2s;
+  opacity: 0;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+@keyframes header {
+  0%   {opacity:0}
+  100% {opacity:1}
+}
+.flex{
+  display: flex;
+}
+.box1 {
+  background: salmon;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: myanimation1;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-direction: normal;
+}
+ @keyframes myanimation1 {
+  0% {background-color: white; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+  25% {background-color: yellow; left: 300px; top: 0px; border-radius: 50% 0 0 0;}
+  50% {background-color: green; left: 300px; top: 300px; border-radius: 50% 50% 0 0}
+  75% {background-color: blue; left: 0px; top: 300px; border-radius: 50% 50% 50% 0;}
+  100% {background-color: gold; left: 400px; top: 300px; border-radius: 50% 50% 50% 50%;}
+}
+.box2 {
+  margin-left: 900px;
+  margin-top: 0px;
+  background: yellow;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: myanimation2;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-direction: alternate;
+}
+@keyframes myanimation2 {
+  0% {background-color: white; right: 0px; top: 0px; border-radius: 0 0 0 0;}
+  25% {background-color: yellow; right: 300px; top: 0px; border-radius: 0 50% 0 0;}
+  50% {background-color: green; right: 300px; top: 300px; border-radius: 50% 50% 0 0}
+  75% {background-color: blue; right: 0px; top: 300px; border-radius: 50% 50% 0 50%;}
+  100% {background-color: gold; right: 400px; top: 300px; border-radius: 50% 50% 50% 50%;}
+}
+.box3 {
+  background: #333;
+  width: 100px;
+  height: 500px;
+  position: relative;
+  margin-left: 550px;
+  animation-name: myanimation3;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes myanimation3 {
+  0% {background-color: white; right: 0px; top: 0px; border-radius: 5% 5% 5% 5%;}
+  20% {background-color: salmon; right: 0px; top: -50px; border-radius: 10% 10% 10% 10%;}
+  40% {background-color: green; right: 0px; top: -100px; border-radius: 15% 15% 15% 15%}
+  60% {background-color: blue; right: 0px; top: -150px; border-radius: 20% 20% 20% 20%;}
+  80% {background-color: white; right: 0px; top: -200px; border-radius: 50% 50% 25% 25%;}
+  100% {background-color: red; right: 0px; top: -200px; border-radius: 50% 50% 25% 25%;}
+}
