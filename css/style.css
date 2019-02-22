@@ -29,10 +29,16 @@ html, body {
 
 form {
     display: inline-block;
+    width: 150px;
     font-family: 'Verdana';
     font-size: 16px;
     background: #eeeeee;
     padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
 }
 
 form .error {
